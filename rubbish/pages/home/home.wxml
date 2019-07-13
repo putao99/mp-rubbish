@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<view id='container'>
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" />
+  <view id='banner'>
+    <!-- <image src=""></image> -->
+  </view>
+  <view id='warpper'>
+    <view class="{{'tip ' + tabClass}}">
+      <text>可再生垃圾 免费上门回收 当前计算称重</text>
+      <text class='more'>查看详情</text>
+    </view>
+    <view id='tabs'>
+      <text class="{{tabIndex == 0 ? 'tab-item active':'tab-item' }}" data-current="0" bindtap="toggletab">代收</text>
+      <text class="{{tabIndex == 1 ? 'tab-item active':'tab-item' }}" data-current="1" bindtap="toggletab">回收</text>
+      <text class="{{tabIndex == 2 ? 'tab-item active':'tab-item' }}" data-current="2" bindtap="toggletab">捐赠</text>
+    </view>
+    <swiper class='swiper' current="{{tabIndex}}" duration="300">
+      <swiper-item>
+        <view class='swiper-tab'>
+          <navigator url='/pages/address-list/list' class='input-item address'>
+            <view class='address-warpper'>
+              <view class='address-text'>{{address.address}}</view>
+              <view>
+                <text>{{address.name}}</text>
+                <text>{{address.phone}}</text>
+              </view>
+            </view>
+          </navigator>
+          <view class='input-item info'>
+            请填写待丢垃圾信息
+            <image src='../../images/icon-more-right.png'/>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper-tab'>
+          <navigator url='' class='input-item address'>
+            <view class='address-warpper'></view>
+          </navigator>
+          <view class='input-item info'>
+            请填写回收物品信息
+            <image src='../../images/icon-more-right.png'/>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper-tab'>
+          <navigator url='' class='input-item address'>
+            <view class='address-warpper'></view>
+          </navigator>
+          <view class='input-item info'>
+            请填写捐赠物品相关信息
+            <image src='../../images/icon-more-right.png'/>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

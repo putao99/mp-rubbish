@@ -1,0 +1,50 @@
+<!--pages/order-submit/submit.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='contact-container bg'>
+      <navigator url="/pages/address-list/list" class='address-warpper '>
+        <view class='address'>
+          <view class='site'>古美西路316弄95号601</view>
+          <view class='contact'>
+            <text>杜先生</text>
+            <text>17521605606</text>
+          </view>
+        </view>
+        <view class='more'>
+          <image src='../../images/icon-more-right.png'></image>
+        </view>
+      </navigator>
+      <view class='time-warpper'>
+        <view>预约时间</view>
+        <view>
+          <text>选择时间</text>
+          <image src='../../images/icon-more-right.png' />
+        </view>
+      </view>
+    </view>
+    <view class='inf-warpper bg'>
+      <view class='info'>
+        <text class='title'>回收物品信息</text>
+        <text class='value'>废金属、废纸、废塑料、洗衣机</text>
+      </view>
+      <view class='note'>
+        <text class='title'>备注</text>
+        <view>
+          <text class='value'>垃圾比较多，希望能够来两个人...</text>
+          <image src="../../images/icon-more-right.png" />
+        </view>
+      </view>
+    </view>
+    <view class='agreement-warpper bg'>
+      <checkbox-group name='isAgree'>
+        <label class="checkbox">
+          <checkbox value="true" color='#999' />
+          垃圾回收、代丢、捐赠《<text>用户协议</text>》勾选及代表同意
+        </label>
+      </checkbox-group>
+    </view>
+    <view class='submit bg'>
+      <button form-type="submit">提交订单</button>
+    </view>
+  </form>
+</view>

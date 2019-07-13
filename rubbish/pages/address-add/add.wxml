@@ -1,0 +1,37 @@
+<!--pages/address-add/add.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='address bg' bindtap='onChangeAddress'>
+      <input name="address" value='{{address}}' placeholder='请选择小区地址' placeholder-class='input-placeholder' disabled/>
+      <image src='../../images/icon-more-right.png'></image>
+    </view>
+    <view class='address-detail bg'>
+      <input name="addressDetail" value="" placeholder='楼/门牌号 如：5单元601' placeholder-class='input-placeholder' />
+    </view>
+    <view class='contact bg'>
+      <input name="name" value='' placeholder='联系人' placeholder-class='input-placeholder' />
+      <view class='line'></view>
+      <input name="phone" value='' placeholder='手机号' placeholder-class='input-placeholder' />
+    </view>
+    <view class='sex bg'>
+      <radio-group class="radio-group" name="sex">
+        <label class="radio">
+          <radio value="1" checked="" color='#3EC0C0' /> 先生
+        </label>
+        <label class="radio">
+          <radio value="1" checked="" color='#3EC0C0' /> 女士
+        </label>
+      </radio-group>
+    </view>
+    <view class='save-ctrl bg'>
+      <checkbox-group name='isSave'>
+        <label class="checkbox">
+          <checkbox value="true" color='#3EC0C0' />保存在地址簿
+        </label>
+      </checkbox-group>
+    </view>
+    <view class='submit'>
+      <button form-type="submit">立即预约</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/profile/profile.wxml-->
+<button open-type="getUserInfo" bindtap='login'> 登录</button>

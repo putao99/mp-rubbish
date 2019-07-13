@@ -1,0 +1,46 @@
+<!--pages/rubbish-info/info.wxml-->
+<view class='container'>
+  <view class='kind-warpper bg'>
+    <view class='kind'>
+      <view class="title">生活垃圾</view>
+      <view class='kind-container'>
+        <view class="{{item.checked?'active radio-warpper':'radio-warpper'}}" wx:for="{{rubbish}}" wx:key="idx" wx:for-index="idx" wx:for-item="item" data-key='{{idx}}' data-attr="rubbish" bindtap='checkRadio'>
+          {{item.label}}
+        </view>
+      </view>
+    </view>
+    <view class='kind'>
+      <view class="title">废弃家电</view>
+      <view class='kind-container'>
+        <view class="{{item.checked?'active radio-warpper':'radio-warpper'}}" wx:for="{{garbage}}" wx:key="idx" wx:for-index="idx" wx:for-item="item" data-key='{{idx}}' data-attr="garbage" bindtap='checkRadio'>
+          {{item.label}}
+        </view>
+      </view>
+    </view>
+    <view class='kind'>
+      <view class="title">大件回收</view>
+      <view class='kind-container'>
+        <view class="{{item.checked?'active radio-warpper':'radio-warpper'}}" wx:for="{{waste}}" wx:key="idx" wx:for-index="idx" wx:for-item="item" data-key='{{idx}}' data-attr="waste" bindtap='checkRadio'>
+          {{item.label}}
+        </view>
+      </view>
+    </view>
+    <view class='tip'>
+      温馨提示：请勿处理违禁品
+    </view>
+  </view>
+  <view class='img-warpper bg'>
+    <view class="title">上传照片(必填)</view>
+    <view class="upload" bindtap="uploadImg">
+      <view class="pic-container">
+        <image src="{{user.avatar}}" background-size="cover" />
+      </view>
+    </view>
+  </view>
+  <view class='note-warpper bg'>
+    <textarea placeholder="请输入需要备注的内容（最多50字）" placeholder-class='placeholder' />
+  </view>
+  <view class='submit'>
+    <button >马上预约</button>
+  </view>
+</view>

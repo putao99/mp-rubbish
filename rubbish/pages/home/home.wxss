@@ -1,0 +1,231 @@
+/* pages/home/home.wxss */
+
+#container {
+  position: relative;
+}
+
+#container #map {
+  width: 100%;
+  height: 100vh;
+}
+
+#container #banner {
+  position: absolute;
+  top: 24rpx;
+  left: 40rpx;
+  width: 670rpx;
+  height: 164rpx;
+  background-color: #fff;
+  box-shadow: 0 8rpx 16rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20rpx;
+}
+
+#container #warpper {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 50rpx;
+  left: 40rpx;
+  width: 670rpx;
+  height: 316rpx;
+  /* padding: 0 40rpx; */
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.1);
+  border-radius: 24rpx;
+}
+
+#container #warpper .tip {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: -92rpx;
+  width: 670rpx;
+  height: 68rpx;
+  padding: 18rpx 20rpx 16rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+
+#container #warpper .tip0::after {
+  position: absolute;
+  bottom: -20rpx;
+  left: 90rpx;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 13px 0 13px;
+  border-color: #fff transparent transparent transparent;
+  content: '';
+}
+
+#container #warpper .tip1::after {
+  position: absolute;
+  bottom: -20rpx;
+  left: 312rpx;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 13px 0 13px;
+  border-color: #fff transparent transparent transparent;
+  content: '';
+}
+
+#container #warpper .tip2::after {
+  position: absolute;
+  bottom: -20rpx;
+  left: 535rpx;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 13px 0 13px;
+  border-color: #fff transparent transparent transparent;
+  content: '';
+}
+
+#container #warpper .tip text {
+  font-size: 24rpx;
+  color: #333;
+  line-height: 34rpx;
+}
+
+#container #warpper .tip .more {
+  position: relative;
+  color: #3ec0c0;
+  cursor: pointer;
+}
+
+#container #warpper .tip .more::before {
+  position: absolute;
+  top: 8rpx;
+  left: -22rpx;
+  width: 2rpx;
+  height: 20rpx;
+  content: '';
+  background-color: #eee;
+  z-index: 999;
+}
+
+#container #warpper #tabs {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  padding: 18rpx 80rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eee;
+}
+
+#container #warpper .tab-item {
+  position: relative;
+  font-size: 32rpx;
+  color: #999;
+  line-height: 44rpx;
+  cursor: pointer;
+}
+
+#container #warpper .active {
+  font-weight: 500;
+  color: #333;
+}
+
+#container #warpper .active:after {
+  position: absolute;
+  left: 10rpx;
+  bottom: -20rpx;
+  content: '';
+  width: 48rpx;
+  height: 6rpx;
+  background-color: #3ec0c0;
+  border-radius: 3px;
+}
+
+#container #warpper .swiper {
+  height: 236rpx;
+}
+
+#container #warpper .swiper-tab .input-item {
+  box-sizing: border-box;
+  height: 116rpx;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+#container #warpper .swiper-tab .input-item:last-child {
+  border: 0;
+}
+
+#container #warpper .swiper-tab .address {
+  position: relative;
+  margin: 0 32rpx;
+}
+
+#container #warpper .swiper-tab .address:before {
+  position: absolute;
+  left: 0;
+  top: 52rpx;
+  width: 12rpx;
+  height: 12rpx;
+  content: '';
+  background-color: #3ec0c0;
+  border-radius: 50%;
+}
+
+#container #warpper .swiper-tab .address:after {
+  position: absolute;
+  right: 0;
+  top: 38rpx;
+  content: '地址簿';
+  font-size: 28rpx;
+  color: #3ec0c0;
+  line-height: 40rpx;
+}
+
+#container #warpper .swiper-tab .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 32rpx;
+  font-size: 32rpx;
+  color: #999;
+  line-height: 44rpx;
+}
+
+#container #warpper .swiper-tab .info:before {
+  position: absolute;
+  left: 0;
+  top: 52rpx;
+  width: 12rpx;
+  height: 12rpx;
+  content: '';
+  background-color: #ff4747;
+  border-radius: 50%;
+}
+
+#container #warpper .swiper-tab .info image {
+  width: 14rpx;
+  height: 26rpx;
+  cursor: pointer;
+}
+
+#container #warpper .swiper-tab .address-warpper {
+}
+
+#container #warpper .swiper-tab .address-warpper .address-text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #222;
+  line-height: 40rpx;
+}
+
+#container #warpper .swiper-tab .address-warpper view text {
+  font-size: 24rpx;
+  color: #999;
+  line-height: 34rpx;
+}
+
+#container #warpper .swiper-tab .address-warpper view text:first-child{
+  margin-right: 40rpx;
+}

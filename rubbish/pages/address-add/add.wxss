@@ -1,0 +1,124 @@
+/* pages/address-add/add.wxss */
+
+.container {
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.container .bg {
+  background-color: #fff;
+}
+
+.container  .address {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 38rpx 32rpx 40rpx;
+}
+
+.container .address input {
+  width: 616rpx;
+}
+
+.container .input-placeholder {
+  font-size: 32rpx;
+  color: #999;
+  line-height: 44rpx;
+}
+
+.container .address image {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.container .address-detail {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 32rpx 38rpx 32rpx 40rpx;
+}
+
+.container .address-detail input {
+  width: 616rpx;
+}
+
+.container .contact {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 32rpx 38rpx 32rpx 40rpx;
+}
+
+.container .contact input:last-child {
+  box-sizing: border-box;
+  padding-left: 40rpx;
+}
+
+.container .contact .line {
+  position: absolute;
+  left: 160px;
+  width: 2rpx;
+  height: 48rpx;
+  background-color: #eee;
+}
+
+.container .sex {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32rpx 38rpx 32rpx 40rpx;
+}
+
+.container .sex .radio {
+  font-size: 32rpx;
+  color: #222;
+  line-height: 44rpx;
+}
+
+.container .sex .radio:first-child {
+  margin-right: 80rpx;
+}
+
+.container .sex .radio radio {
+  margin-right: 20rpx;
+}
+
+.container .save-ctrl {
+  box-sizing: border-box;
+  padding: 32rpx 40rpx;
+  margin-top: 20rpx;
+}
+
+.container .save-ctrl .radio {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999;
+  line-height: 44rpx;
+}
+
+.container .save-ctrl .checkbox checkbox {
+  margin-right: 20rpx;
+}
+
+.container .submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.container .submit button {
+  width: 670rpx;
+  height: 88rpx;
+  background-color: #3ec0c0;
+  border-radius: 12rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #fff;
+  line-height: 88rpx;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<!--pages/address-list/list.wxml-->
+<view class='container'>
+  <view class='address-list bg'>
+    <view class='address-item' wx:for="{{addressList}}" wx:for-index="idx" wx:key="idx" wx:for-item="item" data-address="{{item}}" bindtap='checkAddress'>
+      <view class='address'>{{item.address}}</view>
+      <view class='contact'>
+        <text>{{item.name}}</text>
+        <text>{{item.phone}}</text>
+      </view>
+    </view>
+  </view>
+  <navigator url='/pages/address-add/add' class='address-add bg'>
+    <image src="../../images/icon-add-address.png"/>
+    <text>添加我的地址</text>
+  </navigator>
+</view>

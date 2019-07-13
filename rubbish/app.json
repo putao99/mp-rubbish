@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/discard-order/order",
+    "pages/home/home",
+    "pages/rubbish-info/info",
+    "pages/address-list/list",
+    "pages/order-submit/submit",
+    "pages/address-add/add",
+    "pages/guide/guide",
+    "pages/profile/profile",
+    "pages/practice/practice"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3EC0C0",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "回收",
+        "iconPath": "images/icon-collect.png",
+        "selectedIconPath": "images/icon-collect-check.png"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "分类指南",
+        "iconPath": "images/icon-guide.png",
+        "selectedIconPath": "images/icon-guide-check.png"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "测试",
+        "iconPath": "images/icon-practice.png",
+        "selectedIconPath": "images/icon-practice-check.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "images/icon-profile.png",
+        "selectedIconPath": "images/icon-profile-check.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
